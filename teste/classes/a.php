@@ -14,12 +14,12 @@ class Humano
     }
 }
 
-$homem = new Humano('<p>Jo„o', 'Ribeiro</p>');
+$homem = new Humano('<p>Jo√£o', 'Ribeiro</p>');
 echo utf8_encode($homem->nomeCompleto());
 $mulher = new Humano('<p>Sofia','Correa<p>');
 echo utf8_encode($mulher->nomeCompleto());
 
-//Classe Anonima, n„o pode ser alterada
+//Classe Anonima, n√£o pode ser alterada
 
 $msg = new class 
 {
@@ -27,6 +27,6 @@ $msg = new class
     {
         echo "teste - classe anonima";
     }
-}; //ponto e virgula no 
+}; //ponto e virgula no final
 
 $msg->teste();
